@@ -114,5 +114,5 @@ void bai7(){
 
 
 int main(){
-    bai7();
+    
 }
