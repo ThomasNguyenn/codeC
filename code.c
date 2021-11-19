@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
+
 // Bai tap 1
 void bai1(){
     float x,y;
@@ -89,6 +91,19 @@ void bai6(){
 }
 
 
+// Bai tap 7
+void bai7(){
+    float x,y,z;
+    double result;
+    printf("Nhap gia tri cua x: ");
+    scanf("%f",&x);
+    printf("Nhap gia tri cua y: ");
+    scanf("%f", &y);
+    printf("Nhap gia tri cua z: ");
+    scanf("%f",&z);
+    result =  ((x + y + sqrt(z))/(x*x - y*y + 1)) - (fabs(sin(x) - z * cos(y))) ;
+    printf("Ket qua cua phep tinh la: %f",result);
+}
 
 
 
@@ -99,5 +114,5 @@ void bai6(){
 
 
 int main(){
-    bai6();
+    bai7();
 }
